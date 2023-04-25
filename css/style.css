@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+:root {
+    --azul-escuro: #000814;
+    --azul-escuro2: #001D3D;
+    --azul: #003566;
+    --azul-claro: #2894fa;
+    --mostarda: #FFC300;
+    --amarelo: #FFD60A;
+    --cinza: #cac9c9;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 80%;
+    overflow-x: hidden;
+ }
+
+/* Header */
+.header {
+    padding: 1rem;
+    font-weight: bolder;
+    /* border-bottom: 1px solid var(--cinza); */
+    box-shadow: 1px 1px 8px var(--cinza);
+}
+
+.header nav a {
+    color: var(--azul-escuro);
+    border-bottom: 1px none;
+}
+
+.header nav .titulo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--azul-escuro) 0%, var(--azul-escuro2) 40%, var(--azul) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10%;
+}
+
+.header nav a:not(.titulo):hover {
+    color: var(--azul);
+}
+
+.card {
+    margin: .5rem;
+    padding: 20px !important;
+    /* border-radius: 15px; */
+    border: none;
+    box-shadow: 7px 7px 5px var(--cinza);
+}
+
+/* Filtro Tabela */
+.filtro-tabela-visualizar {
+    margin-bottom: 1rem;
+}
+
+select:focus, input:focus{
+    box-shadow: 0 0 0 0 !important;
+    border: 1px solid var(--azul);
+}
+
+.btn-busca button{
+    background: none;
+    border: none;
+}
+
+.btn-busca i{
+    color: var(--cinza);
+}
+
+
+.btn-adicionar {
+    background-color: var(--azul);
+    color:#ffffff
+}
+
+.btn-adicionar:hover {
+    background-color: var(--azul);
+    color:#ffffff
+}
+
+
+

@@ -1,0 +1,37 @@
+CREATE DATABASE metasGestao;
+
+USE metasGestao;
+
+CREATE TABLE funcionarios (
+  idFuncionario   int NOT NULL AUTO_INCREMENT,
+  nome varchar(300) NOT NULL,
+  cargo varchar(300) NOT NULL,
+  dataCadastro     datetime NOT NULL,
+  dataAtualizacao datetime,
+  dataExclusao    datetime,
+  PRIMARY KEY(idFuncionario)
+);
+
+CREATE TABLE metas (
+  idMeta  int NOT NULL AUTO_INCREMENT,
+  idFuncionario int NOT NULL,
+  mes INT NOT NULL,
+  ano INT NOT NULL,
+  valorMeta varchar(300) NOT NULL,
+  dataCadastro     datetime NOT NULL,
+  dataAtualizacao datetime,
+  dataExclusao    datetime,
+  PRIMARY KEY(idMeta),
+  FOREIGN KEY (idFuncionario) REFERENCES funcionarios(idFuncionario)    
+);
+
+CREATE TABLE apontamentos (
+  idApontamento int NOT NULL AUTO_INCREMENT,
+  idMeta  int NOT NULL,
+  valorApontamento varchar(300) NOT NULL,
+  dataCadastro     datetime NOT NULL,
+  dataAtualizacao datetime,
+  dataExclusao    datetime,
+  PRIMARY KEY(idApontamento),
+  FOREIGN KEY (idMeta) REFERENCES metas(idMeta)    
+);
