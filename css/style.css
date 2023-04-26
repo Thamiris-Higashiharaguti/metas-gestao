@@ -68,6 +68,14 @@ select:focus, input:focus{
     border: 1px solid var(--azul);
 }
 
+/* Subtitulo */
+.subtitulo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Botões */
 .btn-busca button{
     background: none;
     border: none;
@@ -77,16 +85,22 @@ select:focus, input:focus{
     color: var(--cinza);
 }
 
-
-.btn-adicionar {
+.btn-salvar, .btn-salvar:hover {
     background-color: var(--azul);
     color:#ffffff
 }
 
-.btn-adicionar:hover {
+.btn-adicionar, .btn-adicionar:hover {
     background-color: var(--azul);
     color:#ffffff
 }
 
+.btn-editar, .btn-editar:hover{
+    background-color: var(--azul);
+    color:#ffffff
+}
 
-
+.btn-excluir, .btn-excluir:hover{
+    background-color: var(--azul);
+    color:#ffffff
+}
